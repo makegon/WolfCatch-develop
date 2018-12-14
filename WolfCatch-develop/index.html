@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en" itemscope itemtype="http://schema.org/Product">
+<head>
+	<meta charset="utf-8">
+	<title>Поймай яйца | Городская доставка!</title>
+	<link rel="stylesheet" href="dist/css/style.css">
+	<link rel="stylesheet" href="dist/css/fullscr.css">
+	<link href='https://fonts.googleapis.com/css?family=Alegreya+Sans+SC' rel='stylesheet' type='text/css'>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+</head>
+	<body>
+		<div id="social" class="container">
+			<div class="g-plusone" data-size="medium" data-annotation="none" data-href="https://github.com/sindresorhus/screenfull.js"></div>
+		</div>
+
+
+		<header>
+			<h1>Городская<span>доставка</span></h1>
+			<p>Игра - лови яйца, зарабатывай баллы</p>
+		</header>
+		<hr>
+		<section>
+			<p>Нажмите для полноэкранного режима</p>
+			<button id="request">Полный экран</button>
+		</section>
+		<hr>
+		<section id="container" class="container">
+				<div id="game-wrap" data-bx="0" data-by="1" data-egg-0="0" data-egg-1="0" data-egg-2="0" data-egg-3="0" data-loss="0">
+
+					<div class="basket"></div>
+					<div class="wolf"></div>
+					<div class="egg e-0"></div>
+					<div class="egg e-1"></div>
+					<div class="egg e-2"></div>
+					<div class="egg e-3"></div>
+
+					<div id="score">
+						<ul>
+							<li><span>0</span></li>
+							<li><span>0</span></li>
+							<li><span>0</span></li>
+							<li><span>0</span></li>
+						</ul>
+					</div>
+
+					<div id="loss"></div>
+
+					<div id="message"></div>
+
+					<div class="more-info">
+						<a href="http://asb42.ru/develop/" class="restart-game">Заново</a>
+						<a href="https://dostavka.a42.ru/" class="source-code">Заказать доставку</a>
+						<div class="how-to-play">Управление</div>
+					</div>
+
+					<div id="controls">
+						<a href="#top-left" data-x="0" data-y="1">Q</a>
+						<a href="#bottom-left" data-x="0" data-y="0">A</a>
+						<a href="#top-right" data-x="1" data-y="1">E</a>
+						<a href="#bottom-right" data-x="1" data-y="0">D</a>
+					</div>
+
+				</div>
+		<button id="exit">Exit</button>
+		</section>
+		<div class="footer">
+			разработка <a href="https://dostavka.a42.ru/">Городская доставка</a>
+		</div>
+
+
+
+		<script src="src/jsgame/comfy.js"></script>
+		<script src="src/jsgame/keyboard_input_manager.js"></script>
+		<script src="src/jsgame/game_components.js"></script>
+		<script src="src/jsgame/html_redraw.js"></script>
+		<script src="src/jsgame/game_manager.js"></script>
+		<script src="src/jsgame/app.js"></script>
+
+		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+		<script type="text/javascript">
+		(function() {
+			var po = document.createElement('script'); po.async = true;
+			po.src = 'https://apis.google.com/js/plusone.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+		})();
+		</script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+		<script src="src/screenfull.js"></script>
+		<script src="src/fullscr.js"></script>
+	</body>
+</html>
